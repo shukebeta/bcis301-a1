@@ -1,0 +1,59 @@
+%%%%%%%%%%%%%%%%%
+% 不能在文章中使用中文
+% 模板文档: http://mirror.aut.ac.nz/CTAN/macros/latex/contrib/apa6/apa6.pdf
+% \section{我是一级标题} 一级标题
+% \subsection{我是二级标题} 二级标题
+% \subsubsection{我是三级标题} 三级标题
+% 带括号引用 \parencite{文章简写}
+%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%
+% 文档定义
+%%%%%%%%%%%%%%%%%
+\documentclass[jou,a4paper]{apa6}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{bibliography.bib}
+
+\title{CSFs in IT IMP: Project Management, Change Management and Risk Management}
+% 页眉中的标题
+\shorttitle{}
+
+% 作者/组织
+\twoauthors{Louis Lu}{Wei Zhong}
+\twoaffiliations{Ara Institute of Canterbury}{Ara Institute of Canterbury}
+
+\leftheader{}
+
+% \abstract{}
+% \keywords{}
+
+%%%%%%%%%%%%%%%%%
+% 文档正文
+%%%%%%%%%%%%%%%%%
+\begin{document}
+% 隐藏页眉
+% \thispagestyle{otherpage}
+% 标题
+\maketitle
+
+%%%%%%%%%%%%%%%%%
+% 目录
+%%%%%%%%%%%%%%%%%
+% \tableofcontents
+% \clearpage
+
+\input{chapters/1-introduction}
+\input{chapters/2-methodology}
+\input{chapters/3-main-body}
+\input{chapters/4-conclusion}
+\input{chapters/5-summary}
+\input{chapters/6-relections}
+
+%%%%%%%%%%%%%%%%%
+% 参考文献
+%%%%%%%%%%%%%%%%%
+\printbibliography
+\end{document}
