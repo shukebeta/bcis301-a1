@@ -1,5 +1,57 @@
 %!TEX root = ../assignment1.tex
 
 \section{Methodology}
+% 总流程
+\subsection{Synopsis}
+For this study, a qualitative analysis is first carried out, gathering all the possible proposals that the researchers suggest regarding success, failure and risks identified in project management, change management and risk management. To identify success, failure and risks in the sources, a list of excerpts is built and then reworded as possible proposals. Those proposals are evaluated in a quantitative model which results a checklist.
 
-We conduct a literature review to  
+% 列举文章和主题
+\subsection{Selection of Literature}
+We focus on three themes regarding to the success of an IT project, namely project management, change management and risk management. Also, CSF(critical success factor), CFF(critical failure factor), ERP(enterprise resource planning) are the keywords used in the literature selections. All the sources should be from professional journals and forums published within 10 years from now, around 10 pages of length and referenced by other researchers, which reliability and professionalism can be assured.
+
+% 如何 coding
+\subsection{Data Analysis}
+When utilizing the aforementioned selection of literature for qualitative analysis, we seek to identify issues, solutions and/or conclusions that authors have deduced or based on. Excerpts are made in this stage. Furthermore, the phases and the roles of stakeholders involved are also noted when a possible clues is identified. Priority information in a same research context is recorded as well, which as known weights. For each of the excerpt, we reword the statement as possible proposals. All possible proposals are also tagged with affected phases and affected roles from their receptive excerpt. This asset is now ready for subsequent evaluation process.
+
+% 如何做 evaluation framework
+\subsection{Evaluation Process}
+With this captured data, an evaluation is processed where all the proposals are listed and evaluated by how a given proposal affects on the phases of a project and on the roles of stakeholders in corresponding phases. To better employ the prioritized lists of proposals by some researchers who use statistical models, a cross-contextual coefficient is introduced during the evaluation process. In the evaluation process, global influence score of a proposal in a specific research context is calculated by the following formula \ref{brief}.
+\begin{equation}
+g_{C_{i},j} = \mathit{k_{C_{i},j}}l_{C_{i},j},\ C_{i,j} \in C_{i},\ C_{i} \in \mathbb{C}
+\label{brief}
+\end{equation}
+
+In formula \ref{brief}, $\mathbb{C}$ denotes the set of all research contexts. And for each research context $C_{i}$ which is an element in $\mathbb{C}$, $C_{i,j}$ denotes a proposal in the given research context $C_{i}$. $g_{Ci,j}$ is the global influence score of a proposal in a given research context $C_{i}$. Similarly, $l_{C_{i},j}$ is the local influence score of the same proposal; $\mathit{k_{C_{i},j}}$ is the cross-contextual coefficient for the same proposal. Each element on the right hand side of the formula can be calculated respectively as follows.
+\begin{equation}
+\mathit{k_{C_{i},j}} = \frac{f_{C_{i,j}}}{\bar{f_{C_i}}}
+\label{coefficient}
+\end{equation}
+\begin{equation}
+\bar{f_{C_i}} = \frac{1}{n}\left (\sum_{m=1}^n{f_{C_{i,m}}}\right)
+\label{mean}
+\end{equation}
+\begin{equation}
+l_{C_{i},j} = |P_{C_{i,j}}||R_{C_{i,j}}|
+\label{local_influence}
+\end{equation}
+
+In formula \ref{coefficient} and \ref{mean}, $f_{C_{i,j}}$ denotes the local influence score in a research context $C_{i}$ and $\bar{f_{C_i}}$ is the arithmetic mean value of all local influence scores of proposals in a given context $C_{i}$.
+
+In formula \ref{local_influence}, $l_{C_{i},j}$ is the local influence score of a given proposal $C_{i,j}$. $|X|$ denotes the cardinality of the given set $X$. $P_{C_{i,j}}$ is the set of affected phases by the proposal $C_{i,j}$. Similarly, $R_{C_{i,j}}$ is that of affected roles of stakeholders in the same context.
+
+Thus, the global influence score of a given proposal that denotes as $g_{C_{i},j}$ can be calculated as follows:
+\begin{equation}
+g_{C_{i},j} =
+\frac
+% 分子 k local=(P R)
+{f_{C_{i,j}} |P_{C_{i,j}}| |R_{C_{i,j}}|} 
+% ----分式线-----
+% 分母 f平均
+{\frac{1}{n}\left (\sum_{m=1}^n{f_{C_{i,m}}}\right)}
+% 满足条件
+,\ 
+C_{i,j} \in C_{i},\ C_{i} \in \mathbb{C}
+\label{final}
+\end{equation}
+
+An higher score of $g_{C_{i},j}$ indicates that the proposal has a wider and deeper influence on project success. We post-process the result of score by descending ranking, in which we select the ones higher than average value. This subset of proposals are tagged by sub-topics and enrolled in the solution checklist.
