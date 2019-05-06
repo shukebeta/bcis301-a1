@@ -12,7 +12,7 @@
 %%%%%%%%%%%%%%%%%
 % 文档定义
 %%%%%%%%%%%%%%%%%
-\documentclass[jou,a4paper]{apa6}
+\documentclass[a4paper]{article}
 \usepackage[american]{babel}
 \usepackage{csquotes}
 \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
@@ -30,14 +30,23 @@
 \addbibresource{bibliography.bib}
 
 \title{CSFs in IT IMP: Project Management, Change Management and Risk Management}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Lu \& Wei}
+\rhead{Assignment 1}
 % 页眉中的标题
-\shorttitle{}
+% \shorttitle{}
 
 % 作者/组织
-\twoauthors{Louis Lu}{Zhong Wei}
-\twoaffiliations{Ara Institute of Canterbury}{Ara Institute of Canterbury}
+% \twoauthors{Louis Lu}{Zhong Wei}
+\author{
+  Louis Lu
+  \and
+  Zhong Wei
+}
+% \twoaffiliations{Ara Institute of Canterbury}{Ara Institute of Canterbury}
 
-\leftheader{}
+% \leftheader{}
 
 % \abstract{}
 % \keywords{}
@@ -54,8 +63,9 @@
 %%%%%%%%%%%%%%%%%
 % 目录
 %%%%%%%%%%%%%%%%%
-% \tableofcontents
-% \clearpage
+\clearpage
+\tableofcontents
+\clearpage
 
 \input{chapters/1-introduction}
 \input{chapters/2-methodology}
