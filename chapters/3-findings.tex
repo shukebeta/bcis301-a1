@@ -13,7 +13,7 @@ To clarify the result, we collect the data into a spreadsheet in which contains 
 \begin{table}[ht]
 \caption{Coding(header only)}
 \resizebox{\columnwidth}{!}{%
-\csvautobooktabular{tables/coding_sample.csv}
+\csvautotabular{tables/coding_sample.csv}
 }
 \label{tab:sample}
 \end{table}
@@ -41,14 +41,14 @@ Using the formula \ref{final}, we calculate the global influence score for each 
 
 In the plot, the horizontal axis stands for all the proposals in context $\mathbb{C}$ and the vertical axis for global influence score. It is clear that there are 4 proposals of significant influence clustering at the top followed by a second group at range roughly between 4 to 6. The trailing group of low influence score occupies the range between 1 to 3.
 
-For the effectiveness and conciseness, we truncate the trailing group scored lower than average($\bar{g}=3.49$), which is also the trailing group. We obtain the following list of solutions.
+For the effectiveness and conciseness, we truncate the trailing group scored lower than average($\bar{g}=3.60$), which is also the trailing group. We obtain the following list of solutions.
 
 \begin{table}[ht]
 \caption{Solution List}
 \resizebox{\columnwidth}{!}{%
-\csvautobooktabular{tables/solutions.csv}
+\csvautotabular{tables/solutions.csv}
 }
 \label{tab:solution}
 \end{table}
 
-% todo 加点对evaluation framework的分析评价
+To track their origins of sources, we mark them with the article themes as shown in \ref{tab:solution}. There are 10 solutions about project management, 8 about risk management and 5 about change management.
