@@ -1,33 +1,75 @@
 %!TEX root = ../assignment1.tex
 
-\section{Findings}
+\section{Findings of Phase 1}
 
-\subsection{Overiew Of Data}
-
-\subsection{Gaps and Solutions}
-
-\subsection{Evaluation Of Solutions}
-
-\subsection{Result Of Evaluation}
-
-\begin{comment}
 \subsection{Overview Of Data}
 In our selection of literature, 6 articles are employed. \citetitle{1} and \citetitle{2} are on project management. \citetitle{3} argues about change management while \citetitle{4} and \citetitle{5} are on risk management. \citetitle{6} gives an overview and an update of information system success and failure, which is composed by an affiliation of famous scholars in the field.
 
+\subsection{Gaps and Solutions}
+The gaps and the solutions often express the same meanings but with different wording. Gaps are often stated as "lack of something" while the solutions suggest to supplement the missing part. Therefore, we only collect the proposals that the literature suggests, for the sake of conciseness.
+
 We have extracted 32 sections containing 48 proposals contributing to success, failure or risks in the 6 articles. We have also tagged the affected phases and the affected roles for each proposal. Weights of priority are also recored and normalized in the researches where the authors conclude with math model. A baseline value of $1$ is given to those proposals from which the authors have not built an math model.
 
-% todo 加点例子
+Using the aforementioned primary themes, here are some samples regarding the 4 main themes: control, process, people and structure.
 
-To clarify the result, we collect the data into a spreadsheet in which contains the following criteria: No., proposal, article identifier, coding identifier, affected phases, affected roles. A sample is given as follows.
-\begin{table}[ht] 
-\caption{Coding(header only)}
-\resizebox{\columnwidth}{!}{%
-\csvautotabular{tables/coding_sample.csv}
-}
-\label{tab:sample}
-\end{table}
+\subsubsection{Samples: Control}
 
-\subsection{Result Of Evaluation}
+On page 9 of \citetitle{3}, \citeauthor{3} argue that design must be established consistently.
+\begin{quotation}
+To facilitate avoid reconfiguration at each stage of implementation, ERP design must be established consistent with needs of the organization.
+\end{quotation}
+
+On page 11 of \citetitle{2}, \citeauthor{2} put emphasis on the suggestion that proactively assess performance of vendor and develop a list of performance metrics for vendors.
+\begin{quotation}
+project managers should develop a list of performance metrics for vendors, work out how to measure them, and obtain regular performance measurements. If there is a deviation from benchmark, project managers should assume a hands-on role to track the issue and bring it to closure, instead of relying on vendors themselves to address the issue. Overall, the adopting company needs to keep track of the progress of the vendor–client relationship and take corrective actions if necessary, and a well-managed partnership can incrementally transfer vendor’s knowledge and skills to in-house employees.
+\end{quotation}
+
+\subsubsection{Samples: Process}
+\citeauthor{2} suggest that keep 85\% of business process common and setup a decision committee on page 11 of \citetitle{2}.
+\begin{quotation}
+Project managers can consider a two-pronged approach to manage scope. First, to avoid entering a competing mode with management, a top-down policy on scope can be put into practice(e.g.,keeping 85\% of business processes common).
+\end{quotation}
+
+\citeauthor{6} recommend that it is better to identify the problem before proposing a solution, and to understand user requirements before designing a system on page 10 of \citetitle{6}.
+\begin{quotation}
+A similar related injunction is that it is important to identify the problem before proposing a solution, and to understand user requirements before designing the system. This is considered to be one part of the general approach to problem solving (Bergman et al. 2002) and is a regular step in the IS development lifecycle.
+\end{quotation}
+
+
+\subsubsection{Samples: People}
+In \citetitle{3}, the author argue that it is important to have effective communication at each level.
+\begin{quotation}
+Al-Mashari et al (2003) Conclude that effective communication is important to ERP implementation. It must be communicated at each level of ERP project life cycle. Importance must be given invariably to user input for his or her requirements, reactions, comments, and approval (Mandal and Gunasegaram, 2003). Project progress ought to be presented in front of organisational committee and managers to indicate the present status of ERP project. Any modification within the objectives, activities, updates, must be mentioned with staff (Mandal and Gunasekaran, 2003).
+\end{quotation}
+
+
+To manage the communication process and create a forum is the suggestion given by \citeauthor{2} when talking about success of building an ERP system.
+\begin{quotation}
+Thus, it is important for project managers to manage the communication process and create a forum in which stakeholders can order priorities and discuss issues. Managing the conflict be tween business and IS throughout a system development cycle is imperative to the successful delivery of an IS project [51]. User participation has been an effective mechanism to lessen conflict [3], thereby improving system development outcomes [52].
+\end{quotation}
+
+
+\subsubsection{Samples: Structure}
+\citeauthor{6} believe that getting top management support is important for the successful implementation of IT on page 10 of \citetitle{6}
+\begin{quotation}
+First, it is important to get top management support. This is probably the most common injunction for the successful implementation of IT in both the IS research and practitioner literature. This injunction has been given for more than three decades (Markus 1983) and continues to be given today (Elbanna 2012).
+\end{quotation}
+
+For vendor support, \citeauthor{6} also suggest that it is important to obtain “independent” advice from a consultant.
+\begin{quotation}
+Fifth, in order to compare the claims of various vendors appropriately, it is a good idea to obtain “independent” advice from a consultant (Pollock and Williams 2009).
+\end{quotation}
+
+\subsection{Evaluation Of Solutions}
+To clarify the result, we collect the data into a spreadsheet in which contains the following criteria: No., proposal, article identifier, coding identifier, affected phases, affected roles.
+% \begin{table}[ht] 
+% \caption{Coding(header only)}
+% \resizebox{\columnwidth}{!}{%
+% \csvautotabular{tables/coding_sample.csv}
+% }
+% \label{tab:sample}
+% \end{table}
+
 With the defined method, we tag our research contexts in the following sequence.
 $C_{1}$ is \citetitle{1}.
 $C_{2}$ is \citetitle{2}.
@@ -46,10 +88,9 @@ Using the formula \ref{final}, we calculate the global influence score for each 
 }
 \end{figure}
 
-\subsection{Analysis Of Evaluation}
-
 In the plot, the horizontal axis stands for all the proposals in context $\mathbb{C}$ and the vertical axis for global influence score. It is clear that there are 4 proposals of significant influence clustering at the top followed by a second group at range roughly between 4 to 6. The trailing group of low influence score occupies the range between 1 to 3.
 
+\subsection{Result Of Evaluation}
 For the effectiveness and conciseness, we truncate the trailing group scored lower than average($\bar{g}=3.60$), which is also the trailing group. We obtain the following list of solutions.
 
 \begin{table}[ht]
@@ -60,5 +101,4 @@ For the effectiveness and conciseness, we truncate the trailing group scored low
 \label{tab:solution}
 \end{table}
 
-To track their origins of sources, we mark them with the article themes as shown in \ref{tab:solution}. There are 10 solutions about project management, 8 about risk management and 5 about change management.
-\end{comment}
+% To track their origins of sources, we mark them with the article themes as shown in \ref{tab:solution}. There are 10 solutions about project management, 8 about risk management and 5 about change management.
