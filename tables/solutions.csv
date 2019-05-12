@@ -1,24 +1,24 @@
-No.,solution,article identifier,global influence score,theme
-1,Strict monitoring of implementation schedule and costs,1,4.41 ,project
-33,team work,4,9.00 ,risk
-4,Organisations need to establish implementation strategies and systematic guidelines with external information system,1,4.54 ,project
-14,effecitive communication at each level is important,3,8.61 ,change
-5,manage the communication process and create a forum,2,9.00 ,project
-32,competent project management,4,6.00 ,risk
-6,keep 85% of business process common and setup a decision committee,2,4.00 ,project
-12,design must be established consistently,3,6.00 ,change
-15,User should be involved in planning and implementing there-business processes of the ERP system,3,5.42 ,change
-11,responsibilities must be assigned to group or individual,3,4.71 ,change
-7,identify risks and categorize them with specific strategies in context,2,4.00 ,project
-8,"pair in-house employees with vendors based on similarity in work values, norms, and problem-solving approaches.",2,4.00 ,project
-17,Change management technical strategy is vital within the entire life cycle of the ERP implementation,3,4.33 ,change
-41,no changing context / uncertainty ,5,4.11 ,risk
-39,rank among the criteria ,5,4.08 ,risk
-42,objectivity of measurement ,5,4.06 ,risk
-9,proactively assess proformance of vendor and develop a list of performance metrics for vendors,2,6.00 ,project
-44,get top management support,6,9.00 ,project
-45,have a project champion,6,4.00 ,project
-28,agile progress tracking mechanism,4,4.00 ,risk
-36,complete set of correct agile practices,4,4.00 ,risk
-48,obtain ‚Äúindependent‚Äù advice from a consultant,6,6.00 ,project
-40,complete criteria coverage(no missing or omitted criteria) ,5,3.85 ,risk
+No.,solution,article identifier,global influence score,primary theme
+44,get top management support,6,9.00 ,structure
+5,manage the communication process and create a forum,2,9.00 ,people
+33,team work,4,9.00 ,people
+14,effecitive communication at each level is important,3,8.61 ,people
+48,obtain ìindependentî advice from a consultant,6,6.00 ,structure
+32,competent project management,4,6.00 ,people
+9,proactively assess performance of vendor and develop a list of performance metrics for vendors,2,6.00 ,control
+12,design must be established consistently,3,6.00 ,control
+15,User should be involved in planning and implementing there-business processes of the ERP system,3,5.42 ,process
+11,responsibilities must be assigned to group or individual,3,4.71 ,structure
+4,Organisations need to establish implementation strategies and systematic guidelines with external information system,1,4.54 ,control
+1,Strict monitoring of implementation schedule and costs,1,4.41 ,control
+17,Change management strategy is vital within the entire life cycle of the ERP implementation,3,4.33 ,control
+41,no changing context / uncertainty ,5,4.11 ,control
+39,rank among the criteria ,5,4.08 ,control
+42,objectivity of measurement ,5,4.06 ,control
+8,"pair in-house employees with vendors based on similarity in work values, norms, and problem-solving approaches.",2,4.00 ,structure
+6,keep 85% of business process common and setup a decision committee,2,4.00 ,process
+45,have a project champion,6,4.00 ,people
+7,identify risks and categorize them with specific strategies in context,2,4.00 ,control
+28,agile progress tracking mechanism,4,4.00 ,control
+36,complete set of correct agile practices,4,4.00 ,control
+40,complete criteria coverage(no missing or omitted criteria) ,5,3.85 ,control
