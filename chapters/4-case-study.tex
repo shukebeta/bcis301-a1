@@ -64,5 +64,32 @@ The organization structure stops from making a timely funding to implement the p
 The government approved VicRoads spending \$52 million on RandL over three years while the Cabinet budget committee was apparently uncertain about the project and there was a risk that the project would not receive the required funding. This risk eventuated.
 \end{quotation}
 \subsection{Evaluation Of Solutions}
+To select the solutions out of all the proposals, we do the same evaluation steps as shown in \ref{section:evaluation}.
 
+With the defined method, we tag all our research contexts as $C_{1}, C_{2}, \ldots, C_{10}$. We assume all the solutions from the 10 case studies are of equal importance, given the fact that there is no math model used in Phase 2. Therefore, we pad the cross-contextual coefficient with a baseline value of 1 to all the $\mathit{k_{C_{i},j}}$ in formula \ref{brief}. So formula \ref{final} can be simplified as 
+
+\begin{equation}
+g_{C_{i},j} = l_{C_{i},j} = |P_{C_{i,j}}| |R_{C_{i,j}}|
+\label{formula:p2}
+\end{equation}
+
+With the updated formula \ref{formula:p2}, we calculate the global influence score for each proposal. Here is a visualization of the scores of all the proposals in Phase 2.
+
+In the plot, there are 3 groups: the leading group of 3 proposals, the group of majority and the trailing group.
+
+\begin{figure}[ht]
+\centering
+\resizebox{\columnwidth}{!}{%
+\includegraphics{global_influence_score_p2.png}
+}
+\end{figure}
 \subsection{Result Of Evaluation}
+We calculate the average score using the same way($\bar{g}=1.37$), which truncates the trailing group. The selected proposals are shown as follows.
+
+\begin{table}[ht]
+\caption{Solution List Of Phase 2}
+\resizebox{\columnwidth}{!}{%
+\csvautotabular{tables/solutions_p2.csv}
+}
+\label{tab:solution2}
+\end{table}
