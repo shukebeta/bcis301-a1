@@ -5,13 +5,24 @@
 \subsection{Overview Of Data}
 In our selection of literature, 6 articles are employed. \citetitle{1} and \citetitle{2} are on project management. \citetitle{3} argues about change management while \citetitle{4} and \citetitle{5} are on risk management. \citetitle{6} gives an overview and an update of information system success and failure, which is composed by an affiliation of famous scholars in the field.
 
+\subsection{Primary Themes} 
+We identify the following primary thmese in our qualitative analysis of Phase 1.
+
+\paragraph{Control} is the control of dynamics when running the project in the full life cycle of a project, especially the control of risk, or any other variables that are not static or predefined.
+
+\paragraph{Process} is a theme that relates to workflow, how to invent and organize steps to accomplish a goal.
+
+\paragraph{People} is related to the skills of stakeholders in ICT projects where information should be successfully sent and perceived, professionalism should be shown and etc.
+
+\paragraph{Structure} means the structure of an organization.
+
 \subsection{Gaps and Solutions}
 
 The gaps and the solutions often express the same meanings but with different wording. Gaps are often stated as "lack of something" while the solutions suggest to supplement the missing part. Therefore, we only collect the proposals that the literature suggests, for the sake of conciseness.
 
 We have extracted 32 sections containing 48 proposals contributing to success, failure or risks from the 6 articles. We have also tagged the affected phases and the affected roles for each proposal. The weights of priority are also recorded and normalized in the researches where the authors conclude with a math model. A baseline value of $1$ is given to those proposals from which the authors have not built a math model.
 
-Using the aforementioned primary themes, regarding the 4 main themes, that is control, process, people and structure here, we have got many findings below:
+here are some samples in each themes:
 
 \subsubsection{Samples: Control}
 
@@ -22,7 +33,7 @@ On page 11 of \citetitle{2}, \citeauthor{2} put emphasis on the suggestion that 
 \subsubsection{Samples: Process}
 \citeauthor{2} suggests that keep 85\% of business process common and set up a decision committee on page 11 of \citetitle{2}. Better relationship between project managers and the management is pretty important to IT Projects. To establish and maintain a good relationship between them, on the one hand, project manages should keep the project scope as consistent as possible with the management; on the other hand, in order to reduce or avoid the resistance of end users from different regions, product managers should consider forming a priority committee. It can be an important scope management tool because its members come from different regions, so the scope decision process is largely transparent to them.
 
-\citeauthor{6} recommend that it is better to identify the problem before proposing a solution and to understand user requirements before designing a system on page 10 of \citetitle{6}. A common mistake is to start designing a solution only with a rough understanding of the problem to be solved, especially for those experienced people. As the saying goes, a good question is better than a great answer. It can be an essential rule that taking more time to understand the problem before making a decision. (Bergman et al. 2002)
+\citeauthor{6} recommend that it is better to identify the problem before proposing a solution and to understand user requirements before designing a system on page 10 of \citetitle{6}. A common mistake is to start designing a solution only with a rough understanding of the problem to be solved, especially for those experienced people. As the saying goes, a good question is better than a great answer. It can be an essential rule that taking more time to understand the problem before making a decision.
 
 \subsubsection{Samples: People}
 In \citetitle{3}, the author argues that it is important to have effective communication at each level. Efficient and effective communication is an integral part of the successful implementation of IT projects. During an IT project life cycle, communication is necessary at every level of the project. According to Mandal and Gunasekaran (2003), opinions from users about their requests, responses, objections or approvals are always important. Project progress should be communicated regularly to management so they can understand the current status of the project. As for the objectives, activities, news or updates, it should be promptly notified to the relevant staff in the project.
@@ -55,16 +66,18 @@ $C_{5}$ is \citetitle{5}.
 
 According to the defined method, we have everything for the evaluation process. Due to the fact that the studies are not conducted with a math model in $C_{2}$ and $C_{4}$, we assume all the solutions from the aforementioned researches are of equal importance. Therefore, we pad the cross-contextual coefficient with a baseline value of 1 to $\mathit{f_{C_{2,j}}}$ and $\mathit{f_{C_{4,j}}}$.
 
-Using the formula \ref{final}, we calculate the global influence score for each proposal. Here is a visualization of the scores of all the proposals.
+Using the formula \ref{final}, we calculate the global influence score for each proposal. Here is a visualization of the scores of all the proposals as in figure \ref{fig:rankingp1}
 
 \begin{figure}[ht]
 \centering
+\caption{Proposal Ranking in Phase 1}
 \resizebox{\columnwidth}{!}{%
 \includegraphics{global_influence_score.png}
 }
+\label{fig:rankingp1}
 \end{figure}
 
-In the plot, the horizontal axis stands for all the proposals in context $\mathbb{C}$ and the vertical axis for global influence score. It is clear that there are 4 proposals of significant influence clustering at the top followed by a second group at range roughly between 4 to 6. The trailing group of low influence score occupies the range between 1 to 3.
+In Figure \ref{fig:rankingp1}, the horizontal axis stands for all the proposals in context $\mathbb{C}$ and the vertical axis for global influence score. It is clear that there are 4 proposals of significant influence clustering at the top followed by a second group at range roughly between 4 to 6. The trailing group of low influence score occupies the range between 1 to 3.
 
 \subsection{Result Of Evaluation}
 For the effectiveness and conciseness, we truncate the trailing group scored lower than average($\bar{g}=3.60$), which is also the trailing group. We obtain the following list of solutions.
