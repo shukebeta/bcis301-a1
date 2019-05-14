@@ -5,8 +5,10 @@
 \subsection{Overview Of Data}
 In Phase 2, 10 case studies are given on how projects failed in Victoria Australia. The cases are government-related information communication and technology projects. The author\parencite{case_study} provides well-structured anatomy of projects where issues are discussed in depth by topics. Additionally, some recommendations are given by the author, some of which is responded by the project owners.
 
+After the qualitative analysis, the same primary themes are used bacause we have found they can be appiled in this research context without much loss of information and it will possibly reduce the complexity of the evaluation tool we are trying to build. 
+
 \subsection{Gaps and Solutions}
-Using the same method, we collect gaps and possible solutions(proposals) for further evaluation. There are 54 sections of gaps reflecting 54 proposals to 10 case studies, some of them are duplicated. The author uses no mathematical model to prioritize gaps, a baseline value of $1$ is also used to all the proposals, according to the predefined methodology.
+Using the same method, we collect gaps and possible solutions(proposals) for further evaluation. There are 54 gaps reflecting 54 proposals to 10 case studies, some of which are duplicate in meaning. The author uses no mathematical model to prioritize gaps, a baseline value of $1$ is also used to all the proposals, according to the predefined methodology.
 
 The collected data are tagged with the same four themes: control, process, people and structure. Here are some samples under each theme.
 
@@ -55,21 +57,24 @@ g_{C_{i},j} = l_{C_{i},j} = |P_{C_{i,j}}| |R_{C_{i,j}}|
 
 With the updated formula \ref{formula:p2}, we calculate the global influence score for each proposal. Here is a visualization of the scores of all the proposals in Phase 2.
 
-In the plot, there are 3 groups: the leading group of 3 proposals, the group of majority and the trailing group.
-
-\begin{figure}[ht]
+In Figure \ref{fig:rankingp2}, there are 3 groups: the leading group of 3 proposals, the group of majority and the trailing group.
+\begin{figure}[!ht]
 \centering
+\caption{Proposal Ranking in Phase 2}
 \resizebox{\columnwidth}{!}{%
-\includegraphics{global_influence_score_p2.png}
+\includegraphics[height=10em]{global_influence_score_p2.png}
 }
+\label{fig:rankingp2}
 \end{figure}
+
+
 \subsection{Result Of Evaluation}
 We calculate the average score using the same way($\bar{g}=1.37$), which truncates the trailing group. The selected proposals are shown as follows.
 
-\begin{table}[ht]
+\begin{table}[!ht]
 \caption{Solution List Of Phase 2}
-\resizebox{\columnwidth}{!}{%
+\begin{adjustbox}{width=1\textwidth}
 \csvautotabular{tables/solutions_p2.csv}
-}
+\end{adjustbox}
 \label{tab:solution2}
 \end{table}
