@@ -3,38 +3,28 @@
 \section{Methodology}
 % 总流程
 \subsection{Synopsis}
-The study consists of two phases. For each phase, a qualitative analysis is first carried out, identifying all the gaps and possible solutions(proposals) that the researchers suggest regarding success, failure, and risks in ICT projects. To identify these themes, a list of excerpts is built and then reworded as proposals. Those proposals are evaluated in a quantitative model which results in a checklist for each phase. The items in both checklists are compared and contrasted for a final checklist. Additionally, Tags, such as affected phases and affected roles, are used for the evaluation process and classification of the final checklist. Following paragraphs will give more details about how the tags are utilized.
-
-Plus, all the gaps and possible solutions are marked in one of the following themes: control, process, people, structure.
-
-\paragraph{Control} Control is the control of dynamics when running the project in the full life cycle of a project, especially the control of risk, or any other variables that are not static or predefined.
-
-\paragraph{Process} Process is a theme that relates to workflow, how to invent and organize steps to accomplish a goal.
-
-\paragraph{People} People is related to the skills of stakeholders in ICT projects where information should be successfully sent and perceived, professionalism should be shown and etc.
-
-\paragraph{Structure} Structure means the structure of an organization.
+The study consists of two phases. For each phase, a qualitative analysis is first carried out, identifying all the gaps and possible solutions(proposals) that the researchers suggest regarding success, failure, and risks in ICT projects. To identify these themes, a list of excerpts(facts) is built and then reworded as proposals. Those proposals are evaluated in a quantitative model which results in a solution list for each phase. The items in both solution lists are compared and contrasted and reshaped into a mark sheet as the evaluation tool we create. Additionally, Tags, such as affected phases and affected roles, are used for the evaluation process; the primary themes in qualitative analysis are top-level categories in the final outcome of the evaluation tool we create. Following paragraphs will give more details about how the tags are utilized throughout the research method.
 
 
 % 列举文章和主题
 \subsection{Selection of Literature}
 In Phase 1, we focus on three themes regarding the success of an IT project, namely project management, change management, and risk management. Also, CSF(critical success factor), CFF(critical failure factor), ERP(enterprise resource planning) are the keywords used in the literature selections. All the sources should be from professional journals and forums published within 10 years from now, around 10 pages of length and referenced by other researchers, which reliability and professionalism can be assured.
 
-In Phase 2, we are given 10 case studies in \citetitle{case_study}. Similarly, we conduct our research using the same method.
+In Phase 2, we are given 10 case studies in \citetitle{case_study} which illustrates 10 IT deployment projects in Victoria, Australia. We conduct our research using the same procedure as in Phase 1.
 
 % 如何 coding
 \subsection{Data Analysis}
-When utilizing the aforementioned selection of literature for qualitative analysis, we seek to identify issues, solutions and/or conclusions that authors have deduced or based on. Excerpts are made in this stage. Furthermore, the phases and the roles of stakeholders involved are also noted when a possible clue is identified. Priority information in the same research context is recorded as well, which as known weights. For each of the excerpt, we reword the statement as possible proposals. All possible proposals are also tagged with affected phases and affected roles from their receptive excerpt. This asset is now ready for the subsequent evaluation process.
+When utilizing the aforementioned selection of literature for qualitative analysis, we seek to identify issues, solutions and/or conclusions that authors have deduced or based on. Excerpts of facts are compiled in this stage. Furthermore, the phases and the roles of stakeholders involved are also noted when a possible clue is identified. Priority information in the same research context is recorded as well, which as known weights. For each of the excerpt, we reword the statement as possible proposals. All possible proposals are also tagged with affected phases and affected roles from their respective excerpt. This asset is now ready for the subsequent evaluation processes.
 
 % 如何做 evaluation framework
 \subsection{Evaluation Process}
-With this captured data, an evaluation is processed where all the proposals are listed and evaluated by how a given proposal affects on the phases of a project and on the roles of stakeholders in corresponding phases. To better employ the prioritized lists of proposals by some researchers who use statistical models, a cross-contextual coefficient is introduced during the evaluation process. In the evaluation process, global influence score of a proposal in a specific research context is calculated by the following formula \ref{brief}.
+With this captured data in each phase, an evaluation is designed where all the proposals are listed and evaluated by how a given proposal affects on the phases of a project and on the roles of stakeholders in corresponding phases. To better employ the prioritized proposals by some researchers who use statistical models, a cross-contextual coefficient is introduced during the evaluation process. In the evaluation process, global influence score of a proposal in a specific research context is calculated by the following formula \ref{brief}.
 \begin{equation}
 g_{C_{i},j} = \mathit{k_{C_{i},j}}l_{C_{i},j},\ C_{i,j} \in C_{i},\ C_{i} \in \mathbb{C}
 \label{brief}
 \end{equation}
 
-In formula \ref{brief}, $\mathbb{C}$ denotes the set of all research contexts. And for each research context $C_{i}$ which is an element in $\mathbb{C}$, $C_{i,j}$ denotes a proposal in the given research context $C_{i}$. $g_{Ci,j}$ is the global influence score of a proposal in a given research context $C_{i}$. Similarly, $l_{C_{i},j}$ is the local influence score of the same proposal; $\mathit{k_{C_{i},j}}$ is the cross-contextual coefficient for the same proposal. Each element on the right hand side of the formula can be calculated respectively as follows.
+In formula \ref{brief}, $\mathbb{C}$ denotes the set of all research contexts. And for each research context $C_{i}$ which is an element in $\mathbb{C}$, $C_{i,j}$ denotes a proposal in the given research context $C_{i}$. $g_{Ci,j}$ is the global influence score of a proposal in a given research context $C_{i}$. Similarly, $l_{C_{i},j}$ is the local influence score of the same proposal; $\mathit{k_{C_{i},j}}$ is the cross-contextual coefficient for the same proposal. Each element on the right hand side of formula \ref{brief} can be calculated respectively as follows.
 \begin{equation}
 \mathit{k_{C_{i},j}} = \frac{f_{C_{i,j}}}{\bar{f_{C_i}}}
 \label{coefficient}
@@ -68,3 +58,17 @@ C_{i,j} \in C_{i},\ C_{i} \in \mathbb{C}
 \end{equation}
 
 A higher score of $g_{C_{i},j}$ indicates that the proposal has a wider and deeper influence on project success. We post-process the result of a score by descending ranking, in which we select the ones higher than average value. This subset of proposals are tagged by sub-topics and enrolled in the solution checklist.
+
+\subsection{Making Of Evaluation Tool}
+
+comparison and contrast are conducted for the findings of both phases to evaluate the agreement between the phases.
+
+If there is some degree of agreement that can contribute to the evaluation tool, an 2-level hierarchical structure mark sheet will be created using the following method.
+
+A 2-level hierarchical Mark Sheet consists of an outer level of the primary themes we used in our entire research; and the inner level of the sub-themes of when the solution is recommended with a new round of qualitative analysis. The solutions are all populated under the sub-themes with normalized weights calculated as follows.
+\begin{equation}
+w_i = \frac{100s_i}{\sum_{i=1}^n{s_i}}\%, s_i \in \mathbb{S}
+\label{formula:toolweight}
+\end{equation}
+
+In formula \ref{formula:toolweight}, $\mathbb{S}$ denotes the collection of solutions of both phases. $s_i$ is a solution in same collection. $w_i$ is the weight of a given solution $s_i$. $g_i$ is the global influence score of the same given solution.
