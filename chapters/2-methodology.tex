@@ -61,14 +61,24 @@ A higher score of $g_{C_{i},j}$ indicates that the proposal has a wider and deep
 
 \subsection{Making Of Evaluation Tool}
 
-comparison and contrast are conducted for the findings of both phases to evaluate the agreement between the phases.
+First, there is a comparison and contrast of the solutions of both phases to evaluate the agreement between the phases.
 
-If there is some degree of agreement that can contribute to the evaluation tool, an 2-level hierarchical structure mark sheet will be created using the following method.
+If there is some degree of agreement that can contribute to the evaluation tool, a 2-level hierarchical structure mark sheet will be created using the following method.
 
-A 2-level hierarchical Mark Sheet consists of an outer level of the primary themes we used in our entire research; and the inner level of the sub-themes of when the solution is recommended with a new round of qualitative analysis. The solutions are all populated under the sub-themes with normalized weights calculated as follows.
+The 2-level hierarchical mark sheet consists of an outer level of the primary themes we used in our entire research; and the inner level of the sub-themes of when the solution is recommended with a new round of qualitative analysis. The solutions are all populated under the sub-themes with normalized weights calculated as follows.
 \begin{equation}
 w_i = \frac{100s_i}{\sum_{i=1}^n{s_i}}\%, s_i \in \mathbb{S}
 \label{formula:toolweight}
 \end{equation}
 
 In formula \ref{formula:toolweight}, $\mathbb{S}$ denotes the collection of solutions of both phases. $s_i$ is a solution in same collection. $w_i$ is the weight of a given solution $s_i$. $g_i$ is the global influence score of the same given solution.
+
+
+When a user mark a project with the mark sheet, the user rate out of 10, on how well the project has done given a solution. The scores are calculated as follows.
+\begin{equation}
+s_i = \frac{r_i}{10w_i\%}, S = \sum_{i=1}^n{s_i}
+\label{formula:toolscore}
+\end{equation}
+In formula \ref{formula:toolscore}, $S$ denotes the final score. $s_i$ is the score of a given solution, $w_i$ is the weight of the same solution, $r_i$ is the user rating out of 10.
+
+A higher final score of $S$ indicates the higher possibility of success.
